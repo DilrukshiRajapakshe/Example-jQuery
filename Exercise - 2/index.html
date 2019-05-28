@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Exericse - 1</title>
+    <style>
+        input::selection {
+            background-color:rgb(252, 221, 221);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Exercise - 1</h1>
+            </div>
+        </div>
+
+        <div class="row" id="registeration">
+            <div class="col-12 col-md-6">
+
+                <form class="ui form" action="" method="GET" enctype="" id="myForm">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input class="form-control" id="txtFullName" type="text" name="txtFullName" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input class="form-control" id="txtAddress" type="text" name="txtAddress" placeholder="Address">
+                    </div>
+                    <label>NIC</label>
+                    <div class="input-group">
+
+                        <input aria-describedby="basic-addon2" class="form-control" id="txtNIC" type="text" name="txtNIC"
+                            placeholder="NIC">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">V</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button id="btnAdd" type="button" class="btn btn-primary">
+                            Add to Table
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+                <span>List of Students</span>
+
+                <table id="tblStudents" class="table table-bordered table-hover">
+
+                    <thead>
+                        <tr>
+                            <th class="center" >No</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th class="center">NIC</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                                
+                    </tbody >
+                        
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="center">There are no records right now !</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/home-controller.js"></script>
+    <script type="text/javascript" src="javaScript/my.js"></script>
+
+
+
+</body>
+
+</html>
